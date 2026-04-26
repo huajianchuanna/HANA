@@ -108,7 +108,7 @@ const WORKS = [
 const EFFECTS = [
   { id: 1, title: '花', video: 'flower' },
   { id: 2, title: '星空背景', video: 'starry_sky' },
-  { id: 3, title: 'CANDY风', video: 'leah' },
+  { id: 3, title: 'CANDY风', video: 'candy_style' },
   { id: 4, title: '黑洞', video: 'black_hole' },
   { id: 5, title: '地球', video: 'earth' },
 ];
