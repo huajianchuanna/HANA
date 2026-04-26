@@ -61,8 +61,8 @@ const OTHER_WORKS_DATA = [
     date: "2026.04",
     status: "done",
     mediaType: "video",
-    source: "/重逢-1.mp4",
-    preview: "/重逢.jpg"
+    source: "/reunion_1.mp4",
+    preview: "/reunion.jpg"
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ const OTHER_WORKS_DATA = [
     mediaType: "video",
     source: "",
     bvid: "BV1ZT421m7tj",
-    preview: "/对比.png"
+    preview: "/contrast.png"
   },
   {
     id: 3,
@@ -82,8 +82,8 @@ const OTHER_WORKS_DATA = [
     date: "2026.04",
     status: "done",
     mediaType: "video",
-    source: "/骤雨.mp4",
-    preview: "/骤雨.png"
+    source: "/sudden_rain.mp4",
+    preview: "/sudden_rain.png"
   },
   {
     id: 4,
@@ -98,19 +98,19 @@ const OTHER_WORKS_DATA = [
 ];
 
 const WORKS = [
-  { id: 1, title: '春岚', category: 'Music PV', year: '2025', preview: '/春岚.png', bvid: 'BV1HCdzBQEtw' },
+  { id: 1, title: '春岚', category: 'Music PV', year: '2025', preview: '/haruarashi.png', bvid: 'BV1HCdzBQEtw' },
   { id: 2, title: 'NO TITLE', category: 'MUSIC PV', year: '2024', preview: '/notitle.png', bvid: 'BV1VaJzzYEkn' },
-  { id: 3, title: '異說彼岸花', category: 'PV', year: '2024', preview: '/异说彼岸花.png', bvid: 'BV1hrhVzDE1h' },
-  { id: 4, title: '圆', category: 'MG动画', year: '2023', preview: '/圆.png', bvid: 'BV18MAQzSETe' },
-  { id: 5, title: '方', category: 'MG动画', year: '2022', preview: '/方.png', bvid: 'BV1vCcXzoEHg' },
+  { id: 3, title: '異說彼岸花', category: 'PV', year: '2024', preview: '/lycoris.png', bvid: 'BV1hrhVzDE1h' },
+  { id: 4, title: '圆', category: 'MG动画', year: '2023', preview: '/circle.png', bvid: 'BV18MAQzSETe' },
+  { id: 5, title: '方', category: 'MG动画', year: '2022', preview: '/square.png', bvid: 'BV1vCcXzoEHg' },
 ];
 
 const EFFECTS = [
-  { id: 1, title: '花', video: '花' },
-  { id: 2, title: '星空背景', video: '星空背景' },
-  { id: 3, title: 'CANDY风', video: '莉雅' },
-  { id: 4, title: '黑洞', video: '黑洞' },
-  { id: 5, title: '地球', video: '地球' },
+  { id: 1, title: '花', video: 'flower' },
+  { id: 2, title: '星空背景', video: 'starry_sky' },
+  { id: 3, title: 'CANDY风', video: 'leah' },
+  { id: 4, title: '黑洞', video: 'black_hole' },
+  { id: 5, title: '地球', video: 'earth' },
 ];
 
 const TIMELINE = [
@@ -1289,7 +1289,7 @@ const GalleryContent = () => (
          <div className={`flex flex-col ${index % 2 === 0 ? 'mt-32' : 'mb-32'}`}>
             <div className="w-full aspect-[3/4] overflow-hidden rounded-2xl group cursor-pointer shadow-[0_20px_50px_rgba(0,0,0,0.1)] bg-neutral-100 border border-neutral-200">
                {index === 1 ? (
-                 <img src={WORKS[0].preview || `/${WORKS[0].title}.jpg`} className="w-full h-full object-cover filter grayscale group-active:scale-95 transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105" alt="春岚" />
+                 <img src={WORKS[0].preview || `/${WORKS[0].title}.png`} className="w-full h-full object-cover filter grayscale group-active:scale-95 transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105" alt="春岚" />
                ) : (
                  <img src={WORKS[index-1]?.preview || `https://picsum.photos/seed/gallery_work_${index}/800/1000`} className="w-full h-full object-cover filter grayscale group-active:scale-95 transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-105" alt={`Detailed Work ${index}`} />
                )}
