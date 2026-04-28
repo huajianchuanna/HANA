@@ -420,7 +420,7 @@ export default function App() {
               <div className="w-12 h-px bg-neutral-200 mx-auto"></div>
               <div className="flex flex-col items-center gap-1">
                  <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">Email</span>
-                 <a href="mailto:hanamihuajian@163.com" className="text-xl md:text-2xl font-medium text-neutral-900 hover:underline underline-offset-4 decoration-neutral-300">hanahuajian@163.com</a>
+                 <a href="mailto:hanamihuajian@163.com" className="text-xl md:text-2xl font-medium text-neutral-900 hover:underline underline-offset-4 decoration-neutral-300">hanamihuajian@163.com</a>
               </div>
             </div>
           </motion.div>
